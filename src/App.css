@@ -44,13 +44,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 
+/** NavBar CSS **/
 nav.navbar {
   padding: 18px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition: 0.32 ease-in-out;
+  transition: 0.32s ease-in-out;
 }
 
 nav.navbar.scrolled {
@@ -58,9 +59,9 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 
-nav.navbar navbar-brand {
-  font-size: large;
-  width: 9%;
+nav.navbar a.navbar-brand {
+  color: #fff !important;
+  font-size: x-large !important;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -74,6 +75,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover, 
 nav.navbar .navbar-nav a.nav-link.navbar-link:active {
+  color: #33E1eD !important;
   opacity: 1;
 }
 

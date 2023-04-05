@@ -25,9 +25,9 @@ export const NavBar = () => {
     }
 
     return(
-        <Navbar expand='lg' className={scrolled ? 'scrolled': ''}>
+        <Navbar expand='md' className={scrolled ? 'scrolled': ''}>
             <Container>
-                <Navbar.Brand href='#home'>
+                <Navbar.Brand href='/'>
                     Brandon Gatewood
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls='basic-navbar-nav'>
