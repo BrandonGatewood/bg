@@ -41,11 +41,11 @@ export const NavBar = () => {
                             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>
                                 Home
                             </Nav.Link>
-                            <Nav.Link href="#experience" className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experience')}>
-                                Experience
-                            </Nav.Link>
                             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>
                                 Projects
+                            </Nav.Link>
+                            <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>
+                                Contact 
                             </Nav.Link>
                             <div classname="socialIcon">
                                 <a href="/#">
