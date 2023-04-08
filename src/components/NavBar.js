@@ -27,7 +27,7 @@ export const NavBar = () => {
 
     return(
         <Router>
-            <Navbar expand='md' className={scrolled ? 'scrolled': ''}>
+            <Navbar bg='transparent' variant='dark' expand='md' className={scrolled ? 'scrolled': ''}>
                 <Container className="container">
                     <Navbar.Brand href='/'>
                         B G
@@ -46,7 +46,6 @@ export const NavBar = () => {
                             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>
                                 Projects
                             </Nav.Link>
-                        </Nav>
                             <div classname="socialIcon">
                                 <a href="/#">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="githubIcon" viewBox="0 0 16 16">
@@ -59,6 +58,7 @@ export const NavBar = () => {
                                     </svg>
                                 </a>
                             </div>
+                        </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
