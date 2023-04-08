@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import '../css/banner.css';
 import headerImg from "../assets/img/endless-clouds.svg";
 
 

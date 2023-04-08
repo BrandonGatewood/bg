@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import '../css/navbar.css';
 import {
     BrowserRouter as Router
 } from  'react-router-dom'
