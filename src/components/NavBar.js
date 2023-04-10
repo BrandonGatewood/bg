@@ -8,19 +8,20 @@ import {
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
-   
-    useEffect(() => {
-        const onScroll = () => {
-            if(window.screenY > 50) {
-                setScrolled(true);
-            }
-            else {
-                setScrolled(false);
-            }
+  
+    const changeBackground = () => {
+        if(window.scrollY > 80) {
+            setScrolled(true);
         }
-        window.addEventListener('scroll', onScroll);
-        return () => window.removeEventListener('scroll', onScroll);
-    }, [])
+        else {
+            setScrolled(false);
+        }
+    }
+
+    useEffect(() => {
+        changeBackground();
+        window.addEventListener('scroll', changeBackground);
+    })
 
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
@@ -28,7 +29,7 @@ export const NavBar = () => {
 
     return(
         <Router>
-            <Navbar bg='transparent' variant='dark' expand='md' className={scrolled ? 'scrolled': ''}>
+            <Navbar variant='dark' expand='md' className={scrolled ? 'scrolled': 'notScrolled'}>
                 <Container className="container">
                     <Navbar.Brand href='/'>
                         B G
@@ -47,6 +48,7 @@ export const NavBar = () => {
                             <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>
                                 Contact 
                             </Nav.Link>
+                        </Nav>
                             <div classname="socialIcon">
                                 <a href="/#">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="githubIcon" viewBox="0 0 16 16">
@@ -59,7 +61,6 @@ export const NavBar = () => {
                                     </svg>
                                 </a>
                             </div>
-                        </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
