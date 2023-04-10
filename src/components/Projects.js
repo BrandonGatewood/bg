@@ -1,32 +1,29 @@
-import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import anImage from '../assets/img/endless-clouds.svg'
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
 import '../css/projects.css';
 
 export const Projects = () => {
-    const personalProjects = [
-        {
-            title: 'Sneakahs',
-            description: 'COMING SOON. ',
-            imgUrl: anImage,
-        },
-        {
-            title: 'Some python api',
-            description: 'COMING SOON.',
-            imgurl: anImage,
-        },
-    ];
-    
-    const schoolProjects = [
+    const myProjects = [
         {
             title: 'Blurp',
-            description: 'capstone project.',
+            description: 'Capstone project in a team of 12. Blurp is a user-friendly web application for users to map out their relationships in a creative and visual way.',
             imgUrl: anImage,
         },
         {
             title: 'Gifiks',
-            description: 'android social media app',
+            description: 'Class project in a team of 2 implemented with Android Studio and Java. Gifiks is android social media app where users can post, share, and like Gifs.',
+            imgUrl: anImage,
+        },
+        {
+            title: 'Sneakahs',
+            description: 'COMING SOON. Personal project implemented with React, Java, and Springboot. Sneakahs is a user-friendly web application for sneakerheads to compare sneaker prices from top reselling apps in one place',
+            imgUrl: anImage,
+        },
+        {
+            title: 'Python api',
+            description: 'COMING SOON. Personal project implemented with React, Python, and Flask. Not sure what Ill be making for this project.',
             imgUrl: anImage,
         },
     ];
@@ -40,61 +37,31 @@ export const Projects = () => {
                             {({ isVisible }) =>
                             <div> 
                                 <h2>Projects</h2>
-                                <p>Here are some cool school and personal projects Ive been working on or planning. Check out my Github for more awesome projects!</p>
-                                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                                        <Nav.Item>
-                                            <Nav.Link eventKey="first">Personal Projects</Nav.Link>
-                                        </Nav.Item>
-                                        <Nav.Item>
-                                            <Nav.Link eventKey="second">School Projects</Nav.Link>
-                                        </Nav.Item>
-                                    </Nav>
-                                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                                        <Tab.Pane eventKey='first'>
-                                            <Row>
-                                            {
-                                                personalProjects.map((project) => {
-                                                    return (
-                                                        <Col size={12} sm={6} md={4}>
-                                                            <div className="proj-imgbx">
-                                                                <img src={project.imgUrl} />
-                                                                <div className="proj-txtx">
-                                                                    <h4>{project.title}</h4>
-                                                                    <span>{project.description}</span>
-                                                                </div>
-                                                            </div>
-                                                        </Col>
-                                                    );
-                                                })
-                                            }
-                                            </Row>
-                                        </Tab.Pane>
-                                        <Tab.Pane eventKey='second'>
-                                            <Row> 
-                                            {
-                                                schoolProjects.map((project) => {
-                                                    return (
-                                                        <Col size={12} sm={6} md={4}>
-                                                            <div className="proj-imgbx">
-                                                                <img src={project.imgUrl} />
-                                                                <div className="proj-txtx">
-                                                                    <h4>{project.title}</h4>
-                                                                    <span>{project.description}</span>
-                                                                </div>
-                                                            </div>
-                                                        </Col>
-                                                    );
-                                                }) 
-                                            }   
-                                            </Row>
-                                        </Tab.Pane>
-                                    </Tab.Content>
-                                </Tab.Container>
+                                <p>Here are some cool school and personal projects Ive completed and currently working on.</p>
+                                <Container>
+                                    <Row>
+                                    {
+                                        myProjects.map((project) => {
+                                            return (
+                                                <Col size={12} lg={6}>
+                                                    <div className="proj-imgbx">
+                                                        <img src={project.imgUrl} />
+                                                        <div className="proj-txtx">
+                                                            <h4>{project.title}</h4>
+                                                            <span>{project.description}</span>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                            );
+                                        })
+                                    }
+                                    </Row>
+                                </Container>
                             </div>}
                         </TrackVisibility>
                     </Col>
                 </Row>
+                <p>Check out my Github for more awesome projects!</p>
             </Container>
         </section>
     );
