@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/bg/static/css/main.ba2d6187.css",
-    "main.js": "/bg/static/js/main.47ba6f60.js",
+    "main.css": "/bg/static/css/main.1340e636.css",
+    "main.js": "/bg/static/js/main.cc8bd9f9.js",
     "static/js/787.6a703cbb.chunk.js": "/bg/static/js/787.6a703cbb.chunk.js",
     "static/media/SF-Pro-Display-Bold.otf": "/bg/static/media/SF-Pro-Display-Bold.90a435dd23c40d2e2fd7.otf",
     "static/media/SF-Pro-Display-Medium.otf": "/bg/static/media/SF-Pro-Display-Medium.43e311826562200e7d35.otf",
     "static/media/SF-Pro-Display-Regular.otf": "/bg/static/media/SF-Pro-Display-Regular.7fd613066beb52632931.otf",
     "static/media/endless-clouds.svg": "/bg/static/media/endless-clouds.e2c09669dad79f5015bb2f091e5d50f5.svg",
     "index.html": "/bg/index.html",
-    "main.ba2d6187.css.map": "/bg/static/css/main.ba2d6187.css.map",
-    "main.47ba6f60.js.map": "/bg/static/js/main.47ba6f60.js.map",
+    "main.1340e636.css.map": "/bg/static/css/main.1340e636.css.map",
+    "main.cc8bd9f9.js.map": "/bg/static/js/main.cc8bd9f9.js.map",
     "787.6a703cbb.chunk.js.map": "/bg/static/js/787.6a703cbb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba2d6187.css",
-    "static/js/main.47ba6f60.js"
+    "static/css/main.1340e636.css",
+    "static/js/main.cc8bd9f9.js"
   ]
 }
