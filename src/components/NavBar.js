@@ -29,7 +29,7 @@ export const NavBar = () => {
         <BrowserRouter>
             <Navbar variant='dark' expand='md' className={scrolled ? 'scrolled': 'notScrolled'}>
                 <Container className="container">
-                    <Navbar.Brand href='/'>
+                    <Navbar.Brand href='/bg/'>
                         B G
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls='basic-navbar-nav'>
