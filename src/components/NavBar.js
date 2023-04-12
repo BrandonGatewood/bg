@@ -1,9 +1,7 @@
 import {useState, useEffect} from "react";
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import '../css/navbar.css';
-import {
-    BrowserRouter as Router
-} from  'react-router-dom'
+import { BrowserRouter } from 'react-router-dom';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -28,7 +26,7 @@ export const NavBar = () => {
     }
 
     return(
-        <Router>
+        <BrowserRouter>
             <Navbar variant='dark' expand='md' className={scrolled ? 'scrolled': 'notScrolled'}>
                 <Container className="container">
                     <Navbar.Brand href='/'>
@@ -64,6 +62,6 @@ export const NavBar = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </Router>
-    )
+        </BrowserRouter>
+    );
 }
