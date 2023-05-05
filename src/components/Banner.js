@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import '../css/banner.css';
-import headerImg from "../assets/img/endless-clouds.svg";
+import headerImg from "../assets/img/header-img.svg";
 
 
 import TrackVisibility from 'react-on-screen';
@@ -59,7 +59,7 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <TrackVisibility>
                             {({ isVisible }) =>
-                                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                                <div id='about' className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Welcome to my Portfolio</span>
                                     <h1>{`Aloha, my name is Brandon and I am a `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Developer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
                                     <p>I am a recent college graduate from Portland State University with a Bachelors degree in Computer Science. 
@@ -71,7 +71,7 @@ export const Banner = () => {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                                    <img className='endlessClouds' src={headerImg} alt="Header Img"/>
+                                    <img className='headerImg' src={headerImg} alt="Header Img"/>
                                 </div>}
                         </TrackVisibility>
                     </Col>
