@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/bg/static/css/main.1340e636.css",
-    "main.js": "/bg/static/js/main.464e43f5.js",
+    "main.css": "/bg/static/css/main.604f3421.css",
+    "main.js": "/bg/static/js/main.b99ec482.js",
     "static/js/787.6a703cbb.chunk.js": "/bg/static/js/787.6a703cbb.chunk.js",
     "static/media/SF-Pro-Display-Bold.otf": "/bg/static/media/SF-Pro-Display-Bold.90a435dd23c40d2e2fd7.otf",
     "static/media/SF-Pro-Display-Medium.otf": "/bg/static/media/SF-Pro-Display-Medium.43e311826562200e7d35.otf",
     "static/media/SF-Pro-Display-Regular.otf": "/bg/static/media/SF-Pro-Display-Regular.7fd613066beb52632931.otf",
+    "static/media/blurp-logo.svg": "/bg/static/media/blurp-logo.82538cacf96bb03273c3bf21c5139534.svg",
+    "static/media/coming-soon.svg": "/bg/static/media/coming-soon.28b798bc24d4fd2842acd50d5925c441.svg",
+    "static/media/gifiks-logo.svg": "/bg/static/media/gifiks-logo.70b1d2401f334820e6c14c51a9ceb8ba.svg",
+    "static/media/header-img.svg": "/bg/static/media/header-img.e50bebe4a6c437f7352994921eec3bb2.svg",
+    "static/media/contact-img.svg": "/bg/static/media/contact-img.4e29b3d3883209e1b9024cb835893fbf.svg",
+    "static/media/sneakahs-logo.svg": "/bg/static/media/sneakahs-logo.e0487b926570a96e8701ee15e894ba0d.svg",
     "static/media/endless-clouds.svg": "/bg/static/media/endless-clouds.e2c09669dad79f5015bb2f091e5d50f5.svg",
     "index.html": "/bg/index.html",
-    "main.1340e636.css.map": "/bg/static/css/main.1340e636.css.map",
-    "main.464e43f5.js.map": "/bg/static/js/main.464e43f5.js.map",
+    "main.604f3421.css.map": "/bg/static/css/main.604f3421.css.map",
+    "main.b99ec482.js.map": "/bg/static/js/main.b99ec482.js.map",
     "787.6a703cbb.chunk.js.map": "/bg/static/js/787.6a703cbb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1340e636.css",
-    "static/js/main.464e43f5.js"
+    "static/css/main.604f3421.css",
+    "static/js/main.b99ec482.js"
   ]
 }
