@@ -71,3 +71,9 @@
     font-size: 15px;
     letter-spacing: 0.8px;
 }
+
+a:visited, a:hover, a:active, a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }

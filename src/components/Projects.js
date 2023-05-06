@@ -1,5 +1,4 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import anImage from '../assets/img/endless-clouds.svg';
 import blurp from '../assets/img/blurp-logo.svg';
 import sneakahs from '../assets/img/sneakahs-logo.svg';
 import gifiks from '../assets/img/gifiks-logo.svg';
@@ -14,21 +13,25 @@ export const Projects = () => {
             title: 'Blurp',
             description: 'Capstone project in a team of 12. Blurp is a user-friendly web application for users to map out their relationships in a creative and visual way.',
             imgUrl: blurp,
+            link: 'https://blurp-pdx.netlify.app/',
         },
         {
             title: 'Gifiks',
             description: 'Class project in a team of 2 implemented with Android Studio and Java. Gifiks is android social media app where users can post, share, and like Gifs.',
             imgUrl: gifiks,
+            link: 'https://github.com/BrandonGatewood/Gifiks',
         },
         {
             title: 'Sneakahs',
             description: 'COMING SOON. Personal project implemented with React, Java, and Springboot. Sneakahs is a user-friendly web application for sneakerheads to compare sneaker prices from top reselling apps in one place',
             imgUrl: sneakahs,
+            link: 'https://blurp-pdx.netlify.app/',
         },
         {
             title: 'Python api',
             description: 'COMING SOON. Personal project implemented with React, Python, and Flask. Not sure what Ill be making for this project.',
             imgUrl: comingSoon,
+            link: 'https://blurp-pdx.netlify.app/',
         },
     ];
 
@@ -48,13 +51,15 @@ export const Projects = () => {
                                         myProjects.map((project) => {
                                             return (
                                                 <Col size={12} lg={6}>
-                                                    <div className="proj-imgbx">
-                                                        <img src={project.imgUrl} />
-                                                        <div className="proj-txtx">
-                                                            <h4>{project.title}</h4>
-                                                            <span>{project.description}</span>
+                                                    <a classname="project-link" href={project.link} target='_blank' rel="noopener noreferrer" >
+                                                        <div className="proj-imgbx">
+                                                            <img src={project.imgUrl} />
+                                                            <div className="proj-txtx">
+                                                                <h4>{project.title}</h4>
+                                                                <span>{project.description}</span>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    </a>
                                                 </Col>
                                             );
                                         })
