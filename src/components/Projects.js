@@ -11,26 +11,30 @@ export const Projects = () => {
     const myProjects = [
         {
             title: 'Blurp',
-            description: 'Capstone project in a team of 12. Blurp is a user-friendly web application for users to map out their relationships in a creative and visual way.',
+            description: 'Capstone project. Blurp is a user-friendly web application for users to map out their relationships in a creative and visual way.',
             imgUrl: blurp,
+            altImgText: "Blurp logo",
             link: 'https://blurp-pdx.netlify.app/',
         },
         {
             title: 'Gifiks',
-            description: 'Class project in a team of 2 implemented with Android Studio and Java. Gifiks is android social media app where users can post, share, and like Gifs.',
+            description: 'Class project implemented with Android Studio and Java. Gifiks is android social media app where users can post, share, and like Gifs.',
             imgUrl: gifiks,
+            altImgText: "Gifiks logo",
             link: 'https://github.com/BrandonGatewood/Gifiks',
         },
         {
             title: 'Sneakahs',
-            description: 'COMING SOON. Personal project implemented with React, Java, and Springboot. Sneakahs is a user-friendly web application for sneakerheads to compare sneaker prices from top reselling apps in one place',
+            description: 'COMING SOON. Personal project implemented with React and Springboot. Sneakahs is a user-friendly web application for sneakerheads to compare sneaker prices from top reselling apps in one place',
             imgUrl: sneakahs,
+            altImgText: "Sneakahs logo",
             link: 'https://blurp-pdx.netlify.app/',
         },
         {
             title: 'Python api',
-            description: 'COMING SOON. Personal project implemented with React, Python, and Flask. Not sure what Ill be making for this project.',
+            description: 'COMING SOON. Personal project implemented with React and Flask. Not sure what Ill be making for this project.',
             imgUrl: comingSoon,
+            altImgText: "Soming soon logo",
             link: 'https://blurp-pdx.netlify.app/',
         },
     ];
@@ -53,7 +57,7 @@ export const Projects = () => {
                                                 <Col size={12} lg={6}>
                                                     <a classname="project-link" href={project.link} target='_blank' rel="noopener noreferrer" >
                                                         <div className="proj-imgbx">
-                                                            <img src={project.imgUrl} />
+                                                            <img src={project.imgUrl} alt={project.altImgText}/>
                                                             <div className="proj-txtx">
                                                                 <h4>{project.title}</h4>
                                                                 <span>{project.description}</span>
